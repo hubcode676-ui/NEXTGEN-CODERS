@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#050505;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    color:white;
+}
+
+.phone{
+    width:390px;
+    min-height:780px;
+    background:#111;
+    border:2px solid gold;
+    border-radius:30px;
+    padding:25px;
+    box-shadow:0 0 30px rgba(255,215,0,.5);
+    overflow:hidden;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo h1{
+    color:gold;
+    font-size:40px;
+}
+
+.logo p{
+    color:#ddd;
+    margin-top:8px;
+}
+
+.welcome{
+    text-align:center;
+    margin-top:80px;
+}
+
+.welcome h2{
+    font-size:34px;
+    color:gold;
+}
+
+.welcome p{
+    margin:20px 0;
+    color:#ddd;
+}
+
+#startBtn{
+    padding:15px 40px;
+    border:none;
+    border-radius:30px;
+    background:gold;
+    color:#111;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#startBtn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px gold;
+}
+
+.hidden{
+    display:none;
+}
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-top:20px;
+}
+
+.card{
+    background:#1b1b1b;
+    border:1px solid gold;
+    border-radius:18px;
+    padding:20px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 18px gold;
+}
+
+.icon{
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+.card h3{
+    font-size:15px;
+    color:white;
+}
+
+.calculator-page{
+    margin-top:20px;
+}
+
+.calc-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+#backBtn{
+    background:gold;
+    border:none;
+    color:#111;
+    padding:8px 15px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.calc-header h2{
+    color:gold;
+    font-size:20px;
+}
+
+#display{
+    width:100%;
+    height:70px;
+    background:#000;
+    color:gold;
+    border:2px solid gold;
+    border-radius:12px;
+    padding:15px;
+    font-size:30px;
+    text-align:right;
+    margin-bottom:20px;
+}
+
+.calculator-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+.calculator-grid button{
+    height:60px;
+    border:none;
+    border-radius:12px;
+    background:#222;
+    color:gold;
+    font-size:20px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.calculator-grid button:hover{
+    background:gold;
+    color:#111;
+    transform:scale(1.05);
+}
+
+.scientific-row{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.scientific-row .calc-btn{
+    flex:1;
+}
+
+/* ===========================
+   Scientific Buttons
+=========================== */
+
+.scientific-row{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.calc-btn{
+    height:50px;
+    background:#1b1b1b;
+    color:gold;
+    border:1px solid rgba(0, 255, 221, 0.719);
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.calc-btn:hover{
+    background:gold;
+    color:black;
+    transform:scale(1.05);
+}
